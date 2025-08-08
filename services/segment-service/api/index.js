@@ -15,7 +15,7 @@ app.use(json());
 
 dotenv.config({ path: resolve(__dirname, "../../.env") });
 
-app.use("/segments", evaluateSegment);
+app.use("/segments/evaluate", evaluateSegment);
 app.get("/", (req, res) => res.send("Segment Service Running!"));
 
 export default app;

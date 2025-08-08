@@ -17,7 +17,7 @@ function SegmentEditor({ setProducts }: { setProducts: any }) {
       if (!url) {
         throw new Error("Backend URL is not set in environment variables");
       }
-      const res = await axios.post(`${url}/segments`, {
+      const res = await axios.post(`${url}/segments/evaluate`, {
         rules: inputRules,
       });
       setProducts(res.data);
