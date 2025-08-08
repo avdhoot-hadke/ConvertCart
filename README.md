@@ -34,3 +34,19 @@ segment-service : https://convert-cart.vercel.app/segments/
 ```
 ---
 
+## AI Usage Notes
+
+During development, I used AI tools to improve the project in the following ways:
+
+- **Which tool was used:** ChatGPT
+- **How AI assisted me:**
+  - Suggested a clean microservices folder structure.
+  - Provided guidance on backend and frontend best practices.
+  - Gave code suggestions to improve efficiency and balance between modularity and maintainability.
+- **What I modified/improved myself:**
+  - Adapted the folder structure and code to fit specific business requirements.
+  - Refined AI-generated suggestions for project constraints.
+  - Reviewed and optimized the AI-suggested logic to ensure correctness, scalability, and alignment with the functional requirements.
+
+All AI-generated output was tested and customized for the final submission.
+
