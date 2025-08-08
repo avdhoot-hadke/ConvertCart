@@ -14,6 +14,7 @@ function SegmentEditor({ setProducts }: { setProducts: any }) {
     setErrorMsg(null);
     try {
       const url = import.meta.env.VITE_SEGMENT_SERVICE;
+      console.log("URL ", url);
       if (!url) {
         throw new Error("Backend URL is not set in environment variables");
       }
@@ -21,7 +22,8 @@ function SegmentEditor({ setProducts }: { setProducts: any }) {
         rules: inputRules,
       });
       setProducts(res.data);
-    } catch {
+    } catch (error) {
+      console.log("ERROR", error);
       setErrorMsg("Evaluation failed. Please check your filter rules.");
     }
   };
